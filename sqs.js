@@ -34,7 +34,7 @@ const DATABASE_NAME = 'wonderview_test';
 //other config constants
 const TIMEOUT_DURATION_IN_SECONDS = 30;
 
-//Array that will store ids of all messages being currently processed.
+//Array that will store ids of all messages currently being processed.
 var message_ids_being_processed = [];
 
 /**
