@@ -1,3 +1,27 @@
+
+/**
+The database that will be used with this should contain the following two tables named queues and messages.
+
+SQL Create statement for queues table:
+ CREATE TABLE `queues` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(100) NOT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+SQL Create statement for messages table:
+CREATE TABLE `messages` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `queue_id` int(11) NOT NULL,
+ `value` varchar(1000) NOT NULL,
+ `arrival_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ PRIMARY KEY (`id`),
+    FOREIGN KEY (queue_id) REFERENCES queues(id)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
+ */
+
+
 //Importing modules
 var mysql = require('mysql');
 
