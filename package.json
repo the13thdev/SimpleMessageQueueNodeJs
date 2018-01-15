@@ -1,0 +1,19 @@
+{
+  "name": "simple_message_queue_vd",
+  "version": "1.0.0",
+  "description": "A simple message queue service. A simpler version of Amazon Simple Queue Service built around MySql database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Vijit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0"
+  }
+}
